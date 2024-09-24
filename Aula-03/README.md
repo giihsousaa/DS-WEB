@@ -1,0 +1,1 @@
+ Na aula 3 aprendemos sobre Listas não numeradas, Listas numeradas, Listas de Definição, Elementos em nível de bloco, comando Div (Divisão, Seção ou Bloco), Input - Tipos de entradas de dados e Formulário.
