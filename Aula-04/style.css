@@ -2,5 +2,25 @@ body{
     background-color: lightblue;
 }
 h1{
-    color: brown;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+p{
+    font-family: Verdana;
+    font-size: 20px;
+    text-align: center;
+}
+.minha-div{
+    background-color: rgb(164, 21, 240);
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+#minha-div{
+    background-color: rgb(255, 28, 255);
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
 }
