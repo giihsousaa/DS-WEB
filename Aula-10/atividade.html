@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos Animados</title>
+  <style>
+  
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #7463f3, #5bdefc, #ff3beb);
+
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .box {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      background: rgba(0, 0, 0, 0.6);
+    
+    }
+
+    .scale:hover {
+      transform: scale(1.5);
+    }
+ 
+    .rotate:hover {
+      transform: rotate(360deg);
+    }
+
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+    
+    .border-radius:hover {
+      border-radius: 50%;
+    }
+    
+    .opacity:hover {
+      opacity: 0.5;
+    }
+
+    @keyframes moverEfeito {
+        0% {
+            transform: translateX(0);
+            background-color: rgb(255, 0, 221);
+    }
+    50% {
+            transform: translateX(200px);
+            background-color: yellow;
+}
+    100% {
+        transform: translateX(0);
+        background-color: rgb(77, 218, 209);
+}
+}
+
+    .animado {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(170, 0, 255);
+        animation:moverEfeito  4s ease-in-out infinite;
+}
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box scale">transform: scale()</div>
+    <div class="box rotate">transform: rotate()</div>
+    <div class="box translate">transform: translate()</div>
+    <div class="box border-radius">border-radius:</div>
+    <div class="box opacity">opacity:</div>
+    <div class="box animado">animado:</div>
+
+
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
