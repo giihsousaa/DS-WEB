@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Boas-Vindas</title>
+</head>
+<body>
+    <h2>Digite seu nome:</h2>
+    <input type="text" id="nome">
+    <button onclick="cadastrar()">cadastrar</button>
+    <h3 id="cadastrar"></h3>
+
+
+    <h2>Verificador de Par ou Ímpar</h2>
+    <label for="numero">Digite um número:</label>
+    <input type="text" id="numero" placeholder="Insira um número">
+    <button onclick="verificarParOuImpar()">Verificar</button>
+
+
+    <h2>Conversor para Caixa Alta</h2>
+    <label for="entradaTexto">Digite um texto:</label>
+    <input type="text" id="entradaTexto" placeholder="Insira sua string aqui">
+    <button onclick="aplicarConversao()">Converter</button>
+
+    <p id="resultado"></p> 
+
+
+    
+    <h2>Calculadora de Porcentagem</h2>
+    <label for="valor">Digite o valor:</label>
+    <input type="number" id="valor" placeholder="Valor inicial" step="0.01">
+    <br><br>
+    
+    <label for="porcentagem">Digite a porcentagem:</label>
+    <input type="number" id="porcentagem" placeholder="Porcentagem" step="0.01">
+    <br><br>
+    
+    <button onclick="aplicarCalculadora()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <h2>Exemplo de Mudança de Cor da Div</h2>
+
+   
+    <div id="box" style="width:100px; height:100px; background:red;"></div>
+    <button onclick="changeColor()">Mudar Cor</button>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
