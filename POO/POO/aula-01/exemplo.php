@@ -11,16 +11,18 @@ class tenis {
         return "o tenis escolhido é:" .$this -> tenis;
     }
     public function amarrar(){
-
+        echo "amarrar tenis";
     }
+    
     public function descalcar(){
-
+        echo "descalcar tenis";
     }
-    public function alcar(){
-
+    public function calcar(){
+        echo "calcar tenis";
     }
    
 }
+
 
 //pularlinha
 
@@ -33,13 +35,13 @@ class casa {
     public $numerodeandares;
 
     public function morar(){
-
+        echo "morar na casa";
     }
     public function limpar(){
-
+        echo "limpar casa";
     }
     public function dormir(){
-
+        echo "dormir na casa";
     }
    
 }
@@ -55,13 +57,13 @@ class futebol {
    
 
     public function chutar(){
-
+        echo "chutar bola";
     }
     public function cair(){
-
+        echo "jogador cair";
     }
     public function correr(){
-
+        echo "correr";
     }
    
 }
@@ -77,13 +79,13 @@ class bicicleta {
     public $quantidademarcha;
 
     public function pedalar(){
-
+        echo "pedalar bicicleta";
     }
     public function buzinar(){
-
+        echo "buzinar a bicicleta";
     }
     public function acelerar(){
-
+        echo "acelerar bicicleta";
     }
    
 }
@@ -98,44 +100,55 @@ class livro {
     public $quantidadedepaginas;
     public $anopublicado;
 
-    public function ler(){
+   
 
+    public function ler(){
+        echo "ler livro";
     }
     public function marcarpaginas(){
-
+        echo "marcar pagina";
     }
     public function abrir(){
-
+        echo "abrir livro";
     }
+    
    
 }
 
-//pularlinha
+
 
 class contabancaria {
     public $saldo;
     public $numerodaConta;
     public $nomedotitular;
 
-    public function exibirsaldo(){
-        return "o saldo é R$" .$this -> saldo;
-    }
-    public function depositar(){
+    
+    public function exibirSaldo(){
+        return "o saldo é R$ " .$this -> saldo.  ",00";
 
     }
-    public function sacar(){
+    public function depositar($deposito){
+            $this->saldo += $deposito;
+            return "Este é o novo saldo" .$this->saldo;
+    }
+    
+    public function sacar($saque){
+        $this->saldo -= $saque;
+        return "Este é o novo saldo" .$this->saldo;
 
     }
-    public function exibir (){
+   
 
-    }
+}
 
 
 $contadaIsabela = new contabancaria();
 $contadaIsabela -> saldo = 130;
-$contadaIsabela -> numerodaConta = 476345,;
+$contadaIsabela -> numerodaConta = 476345;
 $contadaIsabela -> titular = "Isabela";
-}
+
+    echo "O saldo da conta é:", $contadaIsabela->saldo;
+
 
 
 ?>
