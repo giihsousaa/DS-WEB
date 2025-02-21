@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background: blue;
+            transition: 0.3s;
+        }
+        .box:hover {
+            background: red;
+            width: 320px;
+            height: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <input type="text" id="inputField" placeholder="Digite algo...">
+    <p id="output"></p>
+    <script>
+        document.getElementById('inputField').oninput = e => 
+            document.getElementById('output').textContent = e.target.value;
+    </script>
+</body>
+</html>
