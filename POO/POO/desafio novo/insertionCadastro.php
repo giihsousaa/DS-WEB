@@ -2,31 +2,34 @@
 
 if ($_SERVER ["REQUEST_METHOD"] != 'POST');{
     echo" <script> alert('Esta faltando o metodo post');
-        window.location.href = 'cliente.php';         
+        window.location.href = 'adminCadastro.php';         
     /<script> ";
 
 }
 
+
 $nome= $_POST['nome'];
+$cargo= $_POST['cargo'];
 $email = $_POST['email'];
-$observacao = $_POST['observacao'];
+$senha = $_POST['senha'];
 
 
 include "clienteValida.php";
-if (validaCliente($nome, $email, $observacao)){
+if (validaCliente($nome, $cargo, $email, $senha)){
 
     include "conexao.php";
 
-    $statement = $db->prepare("INSERT INTO clientes (nome, email, observacao) VALUES (:nome, :email, :observacao)");
+    $statement = $db->prepare("INSERT INTO administador (nome, cargo, email, senha) VALUES (:nome, :cargo, :email, :senha)");
     $statement->bindParam(':nome', $nome);
+    $statement->bindParam(':cargo', $cargo);
     $statement->bindParam(':email', $email);
-    $statement->bindParam(':observacao', $observacao);
+    $statement->bindParam(':senha', $senha);
     $statement->execute();
 
 }
 
 
-header("Location: cliente.php"); //Redirecionando com o PHP
+header("Location: adminCadastro.php"); //Redirecionando com o PHP
 
 
 /*$retorno = $statement->execute(array($nome, $email)); 
