@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.tela-senha {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.tela-senha h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tela-senha input {
+    width: 80px;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#aumentar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#diminuir {
+    background-color: #f44336;
+    color: white;
+}
+
+.botoes button:hover {
+    opacity: 0.8;
+}
